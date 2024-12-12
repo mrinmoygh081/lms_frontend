@@ -24,7 +24,7 @@ const CourseDetails = () => {
               <div className="pageheader-content">
                 <div className="course-category">
                   <a href="#" className="course-cate">
-                    Adobe XD
+                    Adobe
                   </a>
                   <a href="#" className="course-offer">
                     30% Off
