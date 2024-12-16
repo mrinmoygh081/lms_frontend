@@ -1,9 +1,8 @@
-import React, { lazy, Suspense, useState } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useLocation,
 } from "react-router-dom";
 import GlobalCss from "../modules/global/css";
 import { Hourglass } from "react-loader-spinner";
@@ -11,16 +10,22 @@ import SignIn from "../modules/authentication/components/SignIn";
 import SignUp from "../modules/authentication/components/SignUp";
 import Course from "../modules/learners/home/components/Course";
 import CourseDetails from "../modules/learners/home/components/CourseDetails";
-const Home = lazy(() => import("../modules/learners/home/components/index"));
-
+import ForgetPassword from "../modules/authentication/components/ForgetPassword";
+import Layout from "../modules/global/components/Layout";
+import Contact from "../modules/learners/home/components/Contact";
+import PageNoteFound from "../modules/global/components/PageNoteFound";
+const Home = lazy(() =>
+  import("../modules/learners/home/components/index").catch((err) => {
+    console.error("Error loading Home component:", err);
+    return { default: () => <div>Error loading page</div> };
+  })
+);
 
 interface AllRoutesProps {
   isAdmin: boolean;
 }
 
 const AllRoutes: React.FC<AllRoutesProps> = ({ isAdmin }) => {
-  const locate = useLocation();
-
   return (
     <Suspense
       fallback={
@@ -30,24 +35,28 @@ const AllRoutes: React.FC<AllRoutesProps> = ({ isAdmin }) => {
             height="30"
             width="30"
             ariaLabel="hourglass-loading"
-            wrapperStyle={{}}
-            wrapperClass=""
             colors={["#306cce", "#72a1ed"]}
           />
         </div>
       }
     >
-      <Routes location={locate} key={locate.key}>
+      <Routes>
         {isAdmin ? (
           <>
-            <Route index element={<Home />} />
-            <Route path='/course' element={<Course />} />
-            <Route path='/course-details' element={<CourseDetails />} />
+            <Route path="/" element={<Layout />} >
+              <Route index element={<Home/>}/>
+              <Route path="course" element={<Course />} />
+              <Route path="course-details" element={<CourseDetails />} />
+              <Route path="contact" element={<Contact />} />
+            </Route>
+            <Route path="*" element={<PageNoteFound/>} />
           </>
         ) : (
           <>
-            <Route path="sign-in" element={<SignIn />} />
-            <Route path="sign-up" element={<SignUp />} />
+            <Route path="*" element={<SignIn />} />
+            <Route path="/sign-up" element={<SignUp />} />
+            <Route path="/sign-in" element={<SignIn />} />
+            <Route path="/forget-password" element={<ForgetPassword />} />
           </>
         )}
       </Routes>
@@ -56,7 +65,13 @@ const AllRoutes: React.FC<AllRoutesProps> = ({ isAdmin }) => {
 };
 
 const RouteHolder = () => {
-  const [isAuthChecked, setAuthChecked] = useState(true);
+  const [isAuthChecked, setAuthChecked] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAuthChecked(true);
+    }, 1000);
+  }, []);
 
   if (!isAuthChecked) {
     return (
@@ -72,18 +87,14 @@ const RouteHolder = () => {
     );
   }
 
-
-
   const isAdmin = true;
 
   return (
     <>
       <GlobalCss />
-      <div>
-        <Router>
-          <AllRoutes isAdmin={isAdmin} />
-        </Router>
-      </div>
+      <Router>
+        <AllRoutes isAdmin={isAdmin} />
+      </Router>
     </>
   );
 };

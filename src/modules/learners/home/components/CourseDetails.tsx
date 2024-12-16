@@ -1,3 +1,10 @@
+import { Link } from "react-router-dom";
+import PageHeaderBanner from "../../../../assets/images/pageheader/02.jpg";
+import PaymentOne from "../../../../assets/images/pyment/01.jpg";
+import AuthorOne from "../../../../assets/images/author/01.jpg";
+import AuthorTwo from "../../../../assets/images/author/02.jpg";
+import AuthorThree from "../../../../assets/images/author/03.jpg";
+
 const CourseDetails = () => {
   return (
     <div>
@@ -7,28 +14,28 @@ const CourseDetails = () => {
             <div className="col-lg-7 col-12">
               <div className="pageheader-thumb">
                 <img
-                  src="assets/images/pageheader/02.jpg"
-                  alt="rajibraj91"
+                  src={PageHeaderBanner}
+                  alt="Page Header Banner"
                   className="w-100"
                 />
-                <a
-                  href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg"
+                <Link
+                  to="#"
                   className="video-button"
                   data-rel="lightcase"
                 >
                   <i className="icofont-ui-play"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-5 col-12">
               <div className="pageheader-content">
                 <div className="course-category">
-                  <a href="#" className="course-cate">
+                  <Link to="#" className="course-cate">
                     Adobe XD
-                  </a>
-                  <a href="#" className="course-offer">
+                  </Link>
+                  <Link to="#" className="course-offer">
                     30% Off
-                  </a>
+                  </Link>
                 </div>
                 <h2 className="phs-title">
                   Advanced Adobe Photoshop For Everyone
@@ -148,12 +155,12 @@ const CourseDetails = () => {
                                 1.1 Welcome to the course 02:30 minutes
                               </div>
                               <div className="video-item-icon">
-                                <a
-                                  href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg"
+                                <Link
+                                  to="#"
                                   data-rel="lightcase"
                                 >
                                   <i className="icofont-play-alt-2"></i>
-                                </a>
+                                </Link>
                               </div>
                             </li>
                             <li className="d-flex flex-wrap justify-content-between">
@@ -162,12 +169,12 @@ const CourseDetails = () => {
                                 minutes
                               </div>
                               <div className="video-item-icon">
-                                <a
-                                  href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg"
+                                <Link
+                                  to="#"
                                   data-rel="lightcase"
                                 >
                                   <i className="icofont-play-alt-2"></i>
-                                </a>
+                                </Link>
                               </div>
                             </li>
                             <li className="d-flex flex-wrap justify-content-between">
@@ -175,12 +182,12 @@ const CourseDetails = () => {
                                 1.3 Essential Photoshop Tools 03:38 minutes
                               </div>
                               <div className="video-item-icon">
-                                <a
-                                  href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg"
+                                <Link
+                                  to="#"
                                   data-rel="lightcase"
                                 >
                                   <i className="icofont-play-alt-2"></i>
-                                </a>
+                                </Link>
                               </div>
                             </li>
                             <li className="d-flex flex-wrap justify-content-between">
@@ -188,12 +195,12 @@ const CourseDetails = () => {
                                 1.4 Finding inspiration 02:30 minutes
                               </div>
                               <div className="video-item-icon">
-                                <a
-                                  href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg"
+                                <Link
+                                  to="#"
                                   data-rel="lightcase"
                                 >
                                   <i className="icofont-play-alt-2"></i>
-                                </a>
+                                </Link>
                               </div>
                             </li>
                             <li className="d-flex flex-wrap justify-content-between">
@@ -201,12 +208,12 @@ const CourseDetails = () => {
                                 1.5 Choosing Your Format 03:48 minutes
                               </div>
                               <div className="video-item-icon">
-                                <a
-                                  href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg"
+                                <Link
+                                  to="#"
                                   data-rel="lightcase"
                                 >
                                   <i className="icofont-play-alt-2"></i>
-                                </a>
+                                </Link>
                               </div>
                             </li>
                           </ul>
@@ -239,12 +246,12 @@ const CourseDetails = () => {
                                 2.1 Using Adjustment Layers 06:20 minutes
                               </div>
                               <div className="video-item-icon">
-                                <a
-                                  href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg"
+                                <Link
+                                  to="#"
                                   data-rel="lightcase"
                                 >
                                   <i className="icofont-play-alt-2"></i>
-                                </a>
+                                </Link>
                               </div>
                             </li>
                             <li className="d-flex flex-wrap justify-content-between">
@@ -252,12 +259,12 @@ const CourseDetails = () => {
                                 2.2 Building the composition 07:33 minutes
                               </div>
                               <div className="video-item-icon">
-                                <a
-                                  href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg"
+                                <Link
+                                  to="#"
                                   data-rel="lightcase"
                                 >
                                   <i className="icofont-play-alt-2"></i>
-                                </a>
+                                </Link>
                               </div>
                             </li>
                             <li className="d-flex flex-wrap justify-content-between">
@@ -265,12 +272,12 @@ const CourseDetails = () => {
                                 2.3 Photoshop Lighting effects 06:30 minutes
                               </div>
                               <div className="video-item-icon">
-                                <a
-                                  href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg"
+                                <Link
+                                  to="#"
                                   data-rel="lightcase"
                                 >
                                   <i className="icofont-play-alt-2"></i>
-                                </a>
+                                </Link>
                               </div>
                             </li>
                             <li className="d-flex flex-wrap justify-content-between">
@@ -279,12 +286,12 @@ const CourseDetails = () => {
                                 08:34 minutes
                               </div>
                               <div className="video-item-icon">
-                                <a
-                                  href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg"
+                                <Link
+                                  to="#"
                                   data-rel="lightcase"
                                 >
                                   <i className="icofont-play-alt-2"></i>
-                                </a>
+                                </Link>
                               </div>
                             </li>
                             <li className="d-flex flex-wrap justify-content-between">
@@ -292,12 +299,12 @@ const CourseDetails = () => {
                                 2.5 Finalizing the details 10:30 minutes
                               </div>
                               <div className="video-item-icon">
-                                <a
-                                  href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg"
+                                <Link
+                                  to="#"
                                   data-rel="lightcase"
                                 >
                                   <i className="icofont-play-alt-2"></i>
-                                </a>
+                                </Link>
                               </div>
                             </li>
                           </ul>
@@ -309,7 +316,7 @@ const CourseDetails = () => {
 
                 <div className="authors">
                   <div className="author-thumb">
-                    <img src="assets/images/author/01.jpg" alt="rajibraj91" />
+                    <img src={AuthorOne} alt="Author One" />
                   </div>
                   <div className="author-content">
                     <h5>Geraldine S. Roemer</h5>
@@ -322,29 +329,29 @@ const CourseDetails = () => {
                     </p>
                     <ul className="lab-ul social-icons">
                       <li>
-                        <a href="#" className="facebook">
+                        <Link to="#" className="facebook">
                           <i className="icofont-facebook"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#" className="twitter">
+                        <Link to="#" className="twitter">
                           <i className="icofont-twitter"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#" className="linkedin">
+                        <Link to="#" className="linkedin">
                           <i className="icofont-linkedin"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#" className="instagram">
+                        <Link to="#" className="instagram">
                           <i className="icofont-instagram"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#" className="pinterest">
+                        <Link to="#" className="pinterest">
                           <i className="icofont-pinterest"></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -356,8 +363,8 @@ const CourseDetails = () => {
                     <li className="comment">
                       <div className="com-thumb">
                         <img
-                          alt="rajibraj91"
-                          src="assets/images/author/02.jpg"
+                          alt="Author Two"
+                          src={AuthorTwo}
                         />
                       </div>
                       <div className="com-content">
@@ -384,8 +391,8 @@ const CourseDetails = () => {
                         <li className="comment">
                           <div className="com-thumb">
                             <img
-                              alt="rajibraj91"
-                              src="assets/images/author/03.jpg"
+                              alt="Author Three"
+                              src={AuthorThree}
                             />
                           </div>
                           <div className="com-content">
@@ -513,7 +520,7 @@ const CourseDetails = () => {
                       </div>
                       <div className="sp-thumb">
                         <img
-                          src="assets/images/pyment/01.jpg"
+                          src={PaymentOne}
                           alt="CodexCoder"
                         />
                       </div>
@@ -525,27 +532,27 @@ const CourseDetails = () => {
                       <div className="ss-content">
                         <ul className="lab-ul">
                           <li>
-                            <a href="#" className="twitter">
+                            <Link to="#" className="twitter">
                               <i className="icofont-twitter"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#" className="vimeo">
+                            <Link to="#" className="vimeo">
                               <i className="icofont-vimeo"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#" className="rss">
+                            <Link to="#" className="rss">
                               <i className="icofont-rss"></i>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
                     </div>
                     <div className="course-enroll">
-                      <a href="#" className="lab-btn">
+                      <Link to="#" className="lab-btn">
                         <span>Enrolled Now</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -558,73 +565,73 @@ const CourseDetails = () => {
                       <ul className="lab-ul">
                         <li>
                           <div className="csdc-left">
-                            <a href="#">Personal Development</a>
+                            <Link to="#">Personal Development</Link>
                           </div>
                           <div className="csdc-right">30</div>
                         </li>
                         <li>
                           <div className="csdc-left">
-                            <a href="#">Photography</a>
+                            <Link to="#">Photography</Link>
                           </div>
                           <div className="csdc-right">20</div>
                         </li>
                         <li>
                           <div className="csdc-left">
-                            <a href="#">Teaching and Academics</a>
+                            <Link to="#">Teaching and Academics</Link>
                           </div>
                           <div className="csdc-right">93</div>
                         </li>
                         <li>
                           <div className="csdc-left">
-                            <a href="#">Art and Design</a>
+                            <Link to="#">Art and Design</Link>
                           </div>
                           <div className="csdc-right">32</div>
                         </li>
                         <li>
                           <div className="csdc-left">
-                            <a href="#">Business</a>
+                            <Link to="#">Business</Link>
                           </div>
                           <div className="csdc-right">26</div>
                         </li>
                         <li>
                           <div className="csdc-left">
-                            <a href="#">Data Science</a>
+                            <Link to="#">Data Science</Link>
                           </div>
                           <div className="csdc-right">27</div>
                         </li>
                         <li>
                           <div className="csdc-left">
-                            <a href="#">Development</a>
+                            <Link to="#">Development</Link>
                           </div>
                           <div className="csdc-right">28</div>
                         </li>
                         <li>
                           <div className="csdc-left">
-                            <a href="#">Finance</a>
+                            <Link to="#">Finance</Link>
                           </div>
                           <div className="csdc-right">36</div>
                         </li>
                         <li>
                           <div className="csdc-left">
-                            <a href="#">Health & Fitness</a>
+                            <Link to="#">Health & Fitness</Link>
                           </div>
                           <div className="csdc-right">39</div>
                         </li>
                         <li>
                           <div className="csdc-left">
-                            <a href="#">Lifestyle</a>
+                            <Link to="#">Lifestyle</Link>
                           </div>
                           <div className="csdc-right">37</div>
                         </li>
                         <li>
                           <div className="csdc-left">
-                            <a href="#">Marketing</a>
+                            <Link to="#">Marketing</Link>
                           </div>
                           <div className="csdc-right">18</div>
                         </li>
                         <li>
                           <div className="csdc-left">
-                            <a href="#">Music</a>
+                            <Link to="#">Music</Link>
                           </div>
                           <div className="csdc-right">20</div>
                         </li>

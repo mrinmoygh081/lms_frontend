@@ -1,5 +1,3 @@
-import Footer from "../../../global/components/Footer";
-import Header from "../../../global/components/Header";
 import BannerOne from "../../../../assets/images/banner/01.png";
 import SponsorOne from "../../../../assets/images/sponsor/01.png";
 import SponsorTwo from "../../../../assets/images/sponsor/02.png";
@@ -33,12 +31,12 @@ import instructorOne from "../../../../assets/images/instructor/01.jpg";
 import instructorTwo from "../../../../assets/images/instructor/02.jpg";
 import instructorThree from "../../../../assets/images/instructor/03.jpg";
 import instructorFour from "../../../../assets/images/instructor/04.jpg";
-import FeedbackOne from "../../../../assets/images/feedback/01.jpg";
-import StudentOne from "../../../../assets/images/feedback/student/01.jpg";
-import StudentTwo from "../../../../assets/images/feedback/student/02.jpg";
-import BlogOne from "../../../../assets/images/blog/01.jpg";
-import BlogTwo from "../../../../assets/images/blog/02.jpg";
-import BlogThree from "../../../../assets/images/blog/03.jpg";
+// import FeedbackOne from "../../../../assets/images/feedback/01.jpg";
+// import StudentOne from "../../../../assets/images/feedback/student/01.jpg";
+// import StudentTwo from "../../../../assets/images/feedback/student/02.jpg";
+// import BlogOne from "../../../../assets/images/blog/01.jpg";
+// import BlogTwo from "../../../../assets/images/blog/02.jpg";
+// import BlogThree from "../../../../assets/images/blog/03.jpg";
 import AchiveOne from "../../../../assets/images/achive/01.png";
 import AchiveTwo from "../../../../assets/images/achive/02.png";
 import { Link } from "react-router-dom";
@@ -49,7 +47,6 @@ import "swiper/css/navigation";
 const Home = () => {
   return (
     <div>
-      <Header />
       <section className="banner-section style-1">
         <div className="container">
           <div className="section-wrapper">
@@ -843,7 +840,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="student-feedbak-section padding-tb shape-img">
+      {/* <div className="student-feedbak-section padding-tb shape-img">
         <div className="container">
           <div className="section-header text-center">
             <span className="subtitle">Loved by 200,000+ students</span>
@@ -938,8 +935,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="blog-section padding-tb section-bg">
+      </div> */}
+      {/* <div className="blog-section padding-tb section-bg">
         <div className="container">
           <div className="section-header text-center">
             <span className="subtitle">FORM OUR BLOG POSTS</span>
@@ -1076,7 +1073,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="achievement-section padding-tb">
         <div className="container">
           <div className="section-header text-center">
@@ -1201,7 +1198,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

@@ -1,82 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&amp;display=swap");
-/*! @@@@@@@@@@@@@@@@@@@@@@
 
-Template Name: LMS
-Template URI: https://themeforest.net/user/CodexCoder
-Author: CodexCoder
-Author URI: https://themeforest.net/user/CodexCoder
-Description: Description
-Version: 1.0.0
-Text Domain: LMS
-Tags: academy, children, education, institute, kids, kids care, kids care home, kids school, kinder garden, kindergarten, nursery, play school, pre-school, responsive
-
-@@@@@@@@@@@@@@@@@@@@@@ */
-/* @@@@@@@@@@@@@@@@@@@@@@
->>> TABLE OF CONTENTS START:
-
-01. Normalize CSS
-02. Global CSS
-03. Header 
-	* Style-1
-	* Style-2
-	* Style-3
-	* Mobile Menu
-04. Banner 
-	* Style-1
-	* Style-2
-	* Style-3
-05. Page Header
-  	* Style-1
-06. Feature Section
-07. About Section
-	* Style-1
-	* Style-2
-	* Style-3
-08. Category Section
-	* Style-1
-	* Style-2
-	* Style-3
-	* Style-4
-09. course Section
-	* Style-1
-	* Style-2
-	* Style-3
-	* Style-4
-10. Course Single Section
-11. Event Section
-	* Style-1
-	* Style-2
-12. Instructor Section
-13. Testimonial Section
-	* Style-1
-	* Style-2
-	* Style-3
-14. Sponsor Section
-15. Newsletter Section
-16. Counterup Section
-17. Countdown Section
-18. Offer Section
-19. Contact Section
-20. Faq Section
-21. Fore Zero
-22. Blog
-	* Style-1
-	* Style-2
-	* Style-3
-	* Blog Single
-23. Widget
-24. Shop Page
-  * Shop Single
-  * cart Page
-25. Services Page
-26. Service Single Page & etc.
-
-
-
->>> TABLE OF CONTENTS END:
-@@@@@@@@@@@@@@@@@@@@@@ */
-/* @@@@@@@@@@@@@  Extend Property CSS Writing Now  @@@@@@@@@@@@@@ */
 .news-letter .section-wrapper,
 footer.style-2 .footer-bottom .section-wrapper,
 footer.style-2
@@ -10980,3 +10904,9 @@ footer.style-2 .footer-top.dark-view * {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Coustom CSS */
+/* ================ */
+.logo_404{
+  width: 75px;
+}

@@ -59,37 +59,49 @@ const GlobalCss = () => {
           background: white;
           height: 100vh;
         }
+        .bottom-menu {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #ffffff;
+          box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+          display: none;
+          justify-content: space-around;
+          padding: 10px 0;
+        }
+        .menu-item {
+          text-align: center;
+          color: #555;
+          text-decoration: none;
+          font-size: 14px;
+          flex: 1;
+        }
+        .menu-item svg {
+          display: block;
+          margin: 0 auto 5px;
+          width: 24px;
+          height: 24px;
+          fill: #555;
+          transition: fill 0.2s;
+        }
+        .menu-item:hover svg,
+        .menu-item:focus svg {
+          fill: #f16126;
+        }
+        .menu-item:hover,
+        .menu-item:focus {
+          color: #f16126;
+        }
+        .header-wrapper .logo{
+          width: 75px;
+        }
 
         /* Media Queries */
         @media only screen and (max-width: 1023px) {
-          .nav_search_box_res {
-            display: flex;
-            align-items: center;
-          }
-          .nav_search_box_large {
-            display: none;
-          }
-          .navbar_icon_wrapper {
-            display: flex;
-            gap: 10px;
-          }
-          .main_btn {
-            min-width: 85px !important;
-          }
-          .nav_responsive_wrapper {
-            justify-content: flex-end;
-          }
-          .outlate_container {
-            padding: 0px 10px !important;
-          }
-          .hamburger_menu {
-            left: 0;
-            width: 100%;
-          }
-          .home_link,
-          .notification_link_text {
-            display: none;
-          }
+           .bottom-menu {
+              display: flex;
+            }
         }
 
         @media (min-width: 768px) and (max-width: 1023px) {

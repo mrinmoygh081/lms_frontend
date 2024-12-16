@@ -62,7 +62,7 @@ const Header = () => {
               <div className="menu">
                 <ul className="lab-ul">
                   <li>
-                    <Link to="#0">Home</Link>
+                    <Link to="/">Home</Link>
                     <ul className="lab-ul">
                       <li>
                         <Link to="/" className="active">
@@ -94,14 +94,14 @@ const Header = () => {
                     <Link to="/">Courses</Link>
                     <ul className="lab-ul">
                       <li>
-                        <Link to="/">Course</Link>
+                        <Link to="/course">Course</Link>
                       </li>
                       <li>
-                        <Link to="/">Course Details</Link>
+                        <Link to="/course-details">Course Details</Link>
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/">Blog</Link>
                     <ul className="lab-ul">
                       <li>
@@ -117,7 +117,7 @@ const Header = () => {
                         <Link to="/">Blog Single</Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/">Pages</Link>
                     <ul className="lab-ul">
@@ -156,7 +156,7 @@ const Header = () => {
                     </ul>
                   </li>
                   <li>
-                    <Link to="/">Contact</Link>
+                    <Link to="/contact">Contact</Link>
                   </li>
                 </ul>
               </div>
